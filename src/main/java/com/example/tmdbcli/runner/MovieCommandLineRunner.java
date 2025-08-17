@@ -46,8 +46,8 @@ public class MovieCommandLineRunner implements CommandLineRunner {
     private void displayMovies (List <Movie> movies) {
         System.out.println ("\nHere are the movies:");
 
-        for (int i = 0; i < movies.size (); i++) {
-            System.out.println (movies.get (i));
+        for (Movie m : movies) {
+            System.out.println (m.getTitle () + ":\n    " + m.getOverview ());
         }
     }
 }

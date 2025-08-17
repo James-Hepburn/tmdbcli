@@ -9,8 +9,5 @@ import lombok.*;
 @NoArgsConstructor
 public class Movie {
     private String title;
-    private String releaseDate;
-    private double voteAverage;
-    private int voteCount;
     private String overview;
 }
